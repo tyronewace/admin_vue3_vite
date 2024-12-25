@@ -26,6 +26,12 @@ export default {
 			meta: { title: "账号列表", icon: "personnel" }
 		},
 		{
+			path: "/adminAuth/longList",
+			component: () => import("@/views/permissions-page/longList.vue"),
+			name: "longList",
+			meta: { title: "长列表Demo", icon: "personnel" }
+		},
+		{
 			path: "/adminAuth/permissionList",
 			component: () => import("@/views/permissions-page/permissionList.vue"),
 			name: "permissionList",

@@ -129,6 +129,15 @@ export default [
 								]
 							},
 							{
+								id: "1-2-2",
+								name: "长列表",
+								icon: "permission",
+								parent_id: "1",
+								type: "2",
+								url: "/adminAuth/longList"
+
+							},
+							{
 								id: "1-3",
 								name: "权限列表",
 								icon: "permission",

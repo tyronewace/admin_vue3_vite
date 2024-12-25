@@ -28,12 +28,19 @@ const app = createApp(App);
 installElementPlus(app);
 installDirective(app);
 installFilter(app);
+import { RecycleScroller } from 'vue-virtual-scroller'
+
+app.component('RecycleScroller', RecycleScroller)
 // 全局组件挂载
 app.component("RightToolbar", RightToolbar);
 app.component("Pagination", Pagination);
 app.component("svg-icon", svgIcon);
 
+import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
+import VirtualScroller from 'vue-virtual-scroller'
+
 app
 	.use(store)
 	.use(router)
+	.use(VirtualScroller)
 	.mount("#app");
